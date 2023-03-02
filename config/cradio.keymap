@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+// #include <dt-bindings/zmk/mouse.h>
 #include "keymap_ch_de.h"
 
 // Layer definitions
@@ -14,6 +15,7 @@
     #define SYML 1
     #define SYMR 2
     #define NUMNAV 3
+	// #define MOUSE 4
     #define FUNC 4
     #define SETTINGS 5
 // -----------------
@@ -131,7 +133,7 @@
 		>;
 		};
 
-        // Numbers and high frequency symbols
+        // Left Symbol Layer
        		symleft_layer {
 		bindings = <
 		&kp DEL     &kp CH_PERC &kp CH_HASH &kp CH_DLR  xxxx		    xxxx       xxxx  xxxx  xxxx      xxxx
@@ -141,7 +143,7 @@
 		>;
 		};
 
-        // Main modifiers and arrow keys
+        // Right Symbol Layer
 		    symright_layer {
 		bindings = <
 		&kp DEL      xxxx       xxxx      xxxx  xxxx         xxxx        &kp CH_AT   &kp CH_PLUS &kp CH_AMPR &kp CH_UNDS
@@ -160,7 +162,16 @@
           				                              ____  ____        ____     ____ 
 		>;
 		};
-        // Function Keys and Media
+        // Mouse Layer
+//     		mouse_layer {
+//		bindings = <
+//		xxxx     xxxx      xxxx     xxxx     xxxx       xxxx     &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_UP &mwh SCROLL_RIGHT  
+//		&mkp MB5 &mkp MB4  &mkp MB3 &mkp MB1 xxxx       &to BASE &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT
+//		xxxx     xxxx      xxxx     &mkp MB2 xxxx       xxxx     xxxx             xxxx             xxxx           xxxx
+//	      				            ____     ____       ____     ____
+//		>;
+//		};
+        // Function Keys
        		func_layer {
 		bindings = <
 		&kp F7 &kp F6    &kp F5       &kp F4  &kp F9         &to NUMNAV    xxxx       xxxx   xxxx  xxxx  
