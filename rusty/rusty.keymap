@@ -135,7 +135,7 @@
 		&kp Q          &kp W       &kp F       &kp P  &kp B              &kp J  &kp L  &kp U       &kp CH_Y       &kp CH_DIER 
 		&kp A          &lp NAV R   &lp SYMR S  &kp T  &kp G              &kp M  &kp N  &rp SYML E  &rp NUM I      &kp O
 		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D  &mt LSHFT V        &kp K  &kp H  &kp COMMA   &mt LGUI DOT   &mt RALT CH_QUOT
-                                            &kp BSPC  &mp LCTRL SPACE    &sk LSHFT  &lt FUNC ENTER
+                                            &kp BSPC  &mt LCTRL SPACE    &sk LSHFT  &lt FUNC ENTER
 		>;
 		};
 
