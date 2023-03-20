@@ -152,9 +152,9 @@
         // Right Symbol Layer
 		    symright_layer {
 		bindings = <
-		&kp DEL      xxxx      xxxx  xxxx  xxxx                xxxx  &kp CH_AT   &kp CH_PLUS &kp CH_AMPR &kp CH_UNDS
-		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_DQOT &kp CH_QST  &kp CH_EXLM &kp CH_MINS
-		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL  &kp CH_ACUT &kp CH_CARR &kp CH_PARA
+		&kp DEL      xxxx      xxxx  xxxx  xxxx                xxxx  &kp CH_AT    &kp CH_PLUS  &kp CH_AMPR  &kp CH_UNDS
+		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_DQOT  &kp CH_QST   &kp CH_EXLM  &kp CH_MINS
+		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &kp CH_ACUT  &kp CH_CARR  &kp CH_PARA
 		                             ____  ____                ____  ____
 		>;
 		};
@@ -171,10 +171,10 @@
         // Navigation (Right Hand)
        		nav_layer {
 		bindings = <
-		xxxx  xxxx  xxxx  xxxx  xxxx    xxxx  &kp HOME     &kp PG_DN  &kp PG_UP  &kp END
-		xxxx  xxxx  xxxx  xxxx  xxxx    xxxx  &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT
-		xxxx  xxxx  xxxx  xxxx  xxxx    xxxx  &kp LS(TAB)  &kp DEL    xxxx       &kp TAB
-          	              ____  ____    ____  ____
+		xxxx      xxxx      xxxx  xxxx  xxxx         xxxx  &kp HOME     &kp PG_DN  &kp PG_UP  &kp END
+		xxxx      xxxx      xxxx  xxxx  xxxx         xxxx  &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT
+		&kp LALT  &kp LGUI  xxxx  xxxx  &kp LSHFT    xxxx  &kp LS(TAB)  &kp DEL    xxxx       &kp TAB
+          	                      ____  ____         ____  ____
 		>;
 		};
         // Mouse Layer
@@ -199,9 +199,9 @@
         // Used to change the keyboard's settings.
        		settings_layer {
 		bindings = <
-		&bootloader   xxxx          xxxx          xxxx          xxxx              xxxx  xxxx  xxxx  xxxx  &bootloader 
-		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &to BASE  xxxx  xxxx  xxxx  xxxx
-		xxxx          xxxx          xxxx          xxxx          xxxx              xxxx  xxxx  xxxx  xxxx  xxxx
+		&bootloader   xxxx          xxxx          xxxx          xxxx              xxxx  xxxx          xxxx          xxxx  &bootloader 
+		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &to BASE  &bt BT_SEL 4  &bt BT_SEL 5  xxxx  xxxx
+		xxxx          xxxx          xxxx          xxxx          xxxx              xxxx  xxxx          xxxx          xxxx  xxxx
           				                                  ____  ____              ____  ____
 		>;
 		};
