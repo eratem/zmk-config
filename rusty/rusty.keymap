@@ -142,7 +142,7 @@
         // Left Symbol Layer
        		symleft_layer {
 		bindings = <
-		&kp DEL      &kp CH_PERC  &kp CH_HASH  &kp CH_DLR   xxxx           xxxx       xxxx  xxxx  xxxx       xxxx
+		&kp DEL      &kp CH_PERC  &kp CH_HASH  &kp CH_DLR   &kp CH_LESS    xxxx       xxxx  xxxx  xxxx       xxxx
 		&kp TAB      &kp CH_PAST  &kp CH_PIPE  &kp CH_SLSH  &kp CH_TILD    xxxx       xxxx  xxxx  xxxx       xxxx
 		&kp LS(TAB)  &kp CH_EURO  &kp CH_GRV   &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
 					                                  ____  ____           ____  ____
@@ -152,7 +152,7 @@
         // Right Symbol Layer
 		    symright_layer {
 		bindings = <
-		&kp DEL      xxxx      xxxx  xxxx  xxxx                xxxx  &kp CH_AT    &kp CH_PLUS  &kp CH_AMPR  &kp CH_UNDS
+		&kp DEL      xxxx      xxxx  xxxx  xxxx         &kp CH_MORE  &kp CH_AT    &kp CH_PLUS  &kp CH_AMPR  &kp CH_UNDS
 		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_DQOT  &kp CH_QST   &kp CH_EXLM  &kp CH_MINS
 		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &kp CH_ACUT  &kp CH_CARR  &kp CH_PARA
 		                             ____  ____                ____  ____
@@ -162,9 +162,9 @@
         // Numbers (Left Hand)
        		num_layer {
 		bindings = <
-		&kp N7     &kp N6     &kp N5     &kp N4           &kp N9       xxxx  xxxx  xxxx  xxxx  xxxx
-		&kp N3     &kp N2     &kp N1     &kp N0           &kp N8       xxxx  xxxx  xxxx  xxxx  xxxx
-		&kp LC(Z)  &kp LC(X)  &kp LC(C)  &mt CH_COLN DOT  &kp LC(V)    xxxx  xxxx  ____  ____  ____
+		&kp N7     &kp N6     &kp N5     &kp N4           &kp N9       xxxx       xxxx  xxxx  xxxx      xxxx
+		&kp N3     &kp N2     &kp N1     &kp N0           &kp N8       xxxx       xxxx  xxxx  xxxx      xxxx
+		&kp LC(Z)  &kp LC(X)  &kp LC(C)  &mt CH_COLN DOT  &kp LC(V)    &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
           				                            ____  ____         ____  ____
 		>;
 		};
@@ -199,7 +199,7 @@
         // Used to change the keyboard's settings.
        		settings_layer {
 		bindings = <
-		&bootloader   xxxx          xxxx          xxxx          xxxx              xxxx  xxxx          xxxx          xxxx  &bootloader 
+		&bootloader   &bt BT_PRV    &bt BT_NXT    xxxx          xxxx              xxxx  xxxx          xxxx          xxxx  &bootloader 
 		&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &to BASE  &bt BT_SEL 4  &bt BT_SEL 5  xxxx  xxxx
 		xxxx          xxxx          xxxx          xxxx          xxxx              xxxx  xxxx          xxxx          xxxx  xxxx
           				                                  ____  ____              ____  ____
