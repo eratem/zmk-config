@@ -17,7 +17,7 @@
 #define CH_RING LS(CH_PARA) // °
 #define CH_PLUS LS(N1) // +
 #define CH_DQOT LS(N2) // "
-#define CH_PAST LS(N3) // *
+#define CH_AST LS(N3) // *
 #define CH_CELA LS(N4) // ç
 #define CH_PERC LS(N5) // %
 #define CH_AMPR LS(N6) // &

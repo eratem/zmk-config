@@ -14,11 +14,12 @@
     #define BASE 0
     #define SYML 1
     #define SYMR 2
-    #define NUM 3
-	#define NAV 4
+	#define CHEESE 3
+    #define NUM 4
+	#define NAV 5
 	// #define MOUSE 4
-    #define FUNC 5
-    #define SETTINGS 6
+    #define FUNC 6
+    #define SETTINGS 7
 // -----------------
 
 // Helper Aliases for formatting
@@ -41,6 +42,114 @@
 };
 
 / {
+	macros {
+		ZMK_MACRO(m_carr,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_CARR &kp SPACE>;
+		)
+		ZMK_MACRO(m_grv,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_GRV &kp SPACE>;
+		)
+		ZMK_MACRO(m_acut,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_ACUT &kp CH_ACUT>;
+		)
+		ZMK_MACRO(m_tild,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_TILD &kp SPACE>;
+		)
+		ZMK_MACRO(m_s_oe,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_OE>;
+		)
+		ZMK_MACRO(m_s_ue,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_UE>;
+		)
+		ZMK_MACRO(m_s_ae,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp CH_AE>;
+		)
+		m_ue: m_ue {
+			compatible = "zmk,behavior-macro";
+			label = "M_UE";
+			#binding-cells = <0>;
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings
+				= <&macro_tap &kp CH_UML>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp U>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+		m_oe: m_oe {
+			compatible = "zmk,behavior-macro";
+			label = "M_OE";
+			#binding-cells = <0>;
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings
+				= <&macro_tap &kp CH_UML>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp O>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+		m_ae: m_ae {
+			compatible = "zmk,behavior-macro";
+			label = "M_AE";
+			#binding-cells = <0>;
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings
+				= <&macro_tap &kp CH_UML>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp A>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+        bt_0: bt_profile_macro_0 {
+            label = "BT_0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&out OUT_BLE>,
+                  <&bt BT_SEL 0>;
+        };
+        bt_1: bt_profile_macro_1 {
+            label = "BT_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&out OUT_BLE>,
+                  <&bt BT_SEL 1>;
+        };
+        bt_2: bt_profile_macro_2 {
+            label = "BT_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&out OUT_BLE>,
+                  <&bt BT_SEL 2>;
+        };
+        bt_3: bt_profile_macro_3 {
+            label = "BT_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&out OUT_BLE>,
+                  <&bt BT_SEL 3>;
+        };
+	};
 	combos {
 		compatible = "zmk,combos";
 		combo_esc {
@@ -125,6 +234,30 @@
 			bindings = <&mo>, <&kp>;
 			hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29>;
 		};
+		mt_oe: mod_tap_oe {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MOD_TAP_OE";
+			#binding-cells = <2>;
+			flavor = "balanced";
+			tapping-term-ms = <150>;
+			bindings = <&m_oe>, <&m_s_oe>;
+		};
+        mt_ue: mod_tap_ue {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MOD_TAP_UE";
+			#binding-cells = <2>;
+			flavor = "balanced";
+			tapping-term-ms = <150>;
+			bindings = <&m_ue>, <&m_s_ue>;
+		};
+        mt_ae: mod_tap_ae {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MOD_TAP_AE";
+			#binding-cells = <2>;
+			flavor = "balanced";
+			tapping-term-ms = <150>;
+			bindings = <&m_ae>, <&m_s_ae>;
+		};
 	};
     keymap {
             compatible = "zmk,keymap";
@@ -132,7 +265,7 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q          &kp W       &kp F       &kp P  &kp B              &kp J  &kp L  &kp U       &kp CH_Y       &kp CH_DIER 
+		&kp Q          &kp W       &kp F       &kp P  &kp B              &kp J  &kp L  &kp U       &kp CH_Y       &sl CHEESE 
 		&kp A          &lp NAV R   &lp SYMR S  &kp T  &kp G              &kp M  &kp N  &rp SYML E  &rp NUM I      &kp O
 		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D  &mt LSHFT V        &kp K  &kp H  &kp COMMA   &mt LGUI DOT   &mt RALT CH_QUOT
                                             &kp BSPC  &mt LCTRL SPACE    &sk LSHFT  &lt FUNC ENTER
@@ -143,7 +276,7 @@
        		symleft_layer {
 		bindings = <
 		&kp DEL      &kp CH_PERC  &kp CH_HASH  &kp CH_DLR   &kp CH_LESS    xxxx       xxxx  xxxx  xxxx       xxxx
-		&kp TAB      &kp CH_PAST  &kp CH_PIPE  &kp CH_SLSH  &kp CH_TILD    xxxx       xxxx  xxxx  xxxx       xxxx
+		&kp TAB      &kp CH_AST   &kp CH_PIPE  &kp CH_SLSH  &kp CH_TILD    xxxx       xxxx  xxxx  xxxx       xxxx
 		&kp LS(TAB)  &kp CH_EURO  &kp CH_GRV   &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
 					                                  ____  ____           ____  ____
 		>;
@@ -156,6 +289,16 @@
 		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_DQOT  &kp CH_QST   &kp CH_EXLM  &kp CH_MINS
 		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &kp CH_ACUT  &kp CH_CARR  &kp CH_PARA
 		                             ____  ____                ____  ____
+		>;
+		};
+
+        // Swiss Special Symbol Layer
+		    cheese_layer {
+		bindings = <
+		____        ____  ____        ____  ____             ____  ____  &mt_ue 0 0   ____         &kp CH_UML
+		&mt_ae 0 0  ____  ____        ____  &kp CH_TILD      ____  ____  ____         ____         &mt_oe 0 0
+		____        ____  &kp CH_GRV  ____  ____             ____  ____  &kp CH_ACUT  &kp CH_CARR  ____
+		                              ____  ____             ____  ____
 		>;
 		};
 
