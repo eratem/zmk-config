@@ -311,7 +311,7 @@
        		num_layer {
 		bindings = <
 		&kp N7          &kp N6          &kp N5          &kp N4           &kp N9           xxxx       xxxx  xxxx  xxxx      xxxx
-		&mt CH_PLUS N3  &mt CH_MINS N2  &mt CH_PAST N1  &mt CH_SLSH N0   &mt CH_EQL N8    xxxx       xxxx  xxxx  xxxx      xxxx
+		&mt CH_PLUS N3  &mt CH_MINS N2  &mt CH_AST N1  &mt CH_SLSH N0   &mt CH_EQL N8    xxxx       xxxx  xxxx  xxxx      xxxx
 		&kp LC(Z)       &kp LC(X)       &kp LC(C)       &mt CH_COLN DOT  &kp LC(V)        &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
           				                                           ____  ____             ____  ____
 		>;

@@ -79,45 +79,21 @@
 			tap-ms = <40>;
 			bindings = <&kp CH_AE>;
 		)
-		m_ue: m_ue {
-			compatible = "zmk,behavior-macro";
-			label = "M_UE";
-			#binding-cells = <0>;
+		ZMK_MACRO(m_ue,
 			wait-ms = <30>;
 			tap-ms = <40>;
-			bindings
-				= <&macro_tap &kp CH_UML>
-				, <&macro_press &kp LSHFT>
-				, <&macro_tap &kp U>
-				, <&macro_release &kp LSHFT>
-				;
-		};
-		m_oe: m_oe {
-			compatible = "zmk,behavior-macro";
-			label = "M_OE";
-			#binding-cells = <0>;
+			bindings = <&kp CH_UML &kp LS(U)>;
+		)
+		ZMK_MACRO(m_oe,
 			wait-ms = <30>;
 			tap-ms = <40>;
-			bindings
-				= <&macro_tap &kp CH_UML>
-				, <&macro_press &kp LSHFT>
-				, <&macro_tap &kp O>
-				, <&macro_release &kp LSHFT>
-				;
-		};
-		m_ae: m_ae {
-			compatible = "zmk,behavior-macro";
-			label = "M_AE";
-			#binding-cells = <0>;
+			bindings = <&kp CH_UML &kp LS(O)>;
+		)
+		ZMK_MACRO(m_ae,
 			wait-ms = <30>;
 			tap-ms = <40>;
-			bindings
-				= <&macro_tap &kp CH_UML>
-				, <&macro_press &kp LSHFT>
-				, <&macro_tap &kp A>
-				, <&macro_release &kp LSHFT>
-				;
-		};
+			bindings = <&kp CH_UML &kp LS(CH_UE)>;
+		)
         bt_0: bt_profile_macro_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";

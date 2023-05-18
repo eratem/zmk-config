@@ -8,7 +8,7 @@
 
 #define CH_PARA GRAVE // § and °
 #define CH_CARR EQUAL // ^ ` ~
-#define CH_DIER RIGHT_BRACKET // ¨ ! ]
+#define CH_UML RIGHT_BRACKET // ¨ ! ]
 #define CH_DLR BACKSLASH // $ £ }
 #define CH_LESS NUBS // < > and backslash
 #define CH_MINS SLASH // - _
@@ -27,7 +27,7 @@
 #define CH_EQL  LS(N0) // =
 #define CH_QST  LS(CH_QUOT) // ?
 #define CH_GRV  LS(CH_CARR) // `
-#define CH_EXLM LS(CH_DIER) // !
+#define CH_EXLM LS(CH_UML) // !
 #define CH_POND LS(CH_DLR) // £
 #define CH_MORE LS(CH_LESS) // >
 #define CH_COLN LS(DOT) // :
@@ -45,7 +45,7 @@
 #define CH_TILD RA(CH_CARR) // ~
 #define CH_EURO RA(E) // €
 #define CH_LBRC RA(CH_UE) // [
-#define CH_RBRC RA(CH_DIER) // ]
+#define CH_RBRC RA(CH_UML) // ]
 #define CH_LCBR RA(CH_AE) // {
 #define CH_RCBR RA(CH_DLR) // }
 #define CH_BSLS RA(CH_LESS) // backslash
