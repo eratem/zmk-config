@@ -319,10 +319,10 @@
         // Used to change the keyboard's settings.
        		settings_layer {
 		bindings = <
-		&bootloader   &bt BT_PRV    &bt BT_NXT  &bt BT_CLR_ALL  xxxx              xxxx  xxxx  xxxx  xxxx  &bootloader 
-		&bt_0         &bt_1         &bt_2       &bt_3           &bt BT_CLR    &to BASE  xxxx  xxxx  xxxx  xxxx
-		xxxx          xxxx          xxxx        xxxx            xxxx              xxxx  xxxx  xxxx  xxxx  xxxx
-          				                                  ____  ____              ____  ____
+		&bootloader   &bt BT_PRV    &bt BT_NXT  xxxx   xxxx              xxxx  xxxx  xxxx  xxxx  &bootloader 
+		&bt_0         &bt_1         &bt_2       &bt_3  &bt BT_CLR    &to BASE  xxxx  xxxx  xxxx  xxxx
+		xxxx          xxxx          xxxx        xxxx   xxxx              xxxx  xxxx  xxxx  xxxx  xxxx
+          				                        ____   ____              ____  ____
 		>;
 		};
         
