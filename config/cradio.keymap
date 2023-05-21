@@ -179,14 +179,9 @@
 			key-positions = <17 27>;
 			bindings = <&kp CH_SCLN>;
 		};
-		combo_dqot {
-			timeout-ms = <75>;
-			key-positions = <18 28>;
-			bindings = <&kp CH_DQOT>;
-		};
 		combo_coln {
 			timeout-ms = <75>;
-			key-positions = <19 29>;
+			key-positions = <18 28>;
 			bindings = <&kp CH_COLN>;
 		};
 		combo_qbspc {
@@ -247,10 +242,10 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q          &kp W       &kp F       &kp P      &kp B              &kp J  &kp L      &kp U       &kp CH_Y           &sl CHEESE
-		&kp A          &kp R       &lp SYMR S  &lp NAV T  &kp G              &kp M  &rp NUM N  &rp SYML E  &kp I              &kp O
-		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D      &mt LSHFT V        &kp K  &kp H       &kp COMMA   &mt LGUI CH_QUOT  &mt RALT DOT
-                                         &mt LCTRL SPACE  &kp BSPC           &lt FUNC ENTER  &sk LSHFT
+		&kp Q          &kp W       &kp F       &kp P  &kp B              &kp J  &kp L  &kp U       &kp CH_Y       &sl CHEESE 
+		&kp A          &lp NAV R   &lp SYMR S  &kp T  &kp G              &kp M  &kp N  &rp SYML E  &rp NUM I      &kp O
+		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D  &mt LSHFT V        &kp K  &kp H  &kp COMMA   &mt LGUI DOT   &mt RALT CH_QUOT
+                                            &kp BSPC  &mt LCTRL SPACE    &sk LSHFT  &lt FUNC ENTER
 		>;
 		};
 
@@ -287,10 +282,10 @@
         // Numbers (Left Hand)
        		num_layer {
 		bindings = <
-		&kp N7          &kp N6          &kp N5          &kp N4           &kp N9           xxxx       xxxx  xxxx  xxxx      xxxx
-		&mt CH_PLUS N3  &mt CH_MINS N2  &mt CH_AST N1  &mt CH_SLSH N0   &mt CH_EQL N8    xxxx       xxxx  xxxx  xxxx      xxxx
-		&kp LC(Z)       &kp LC(X)       &kp LC(C)       &mt CH_COLN DOT  &kp LC(V)        &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
-          				                                           ____  ____             ____  ____
+		&kp N7     &kp N6     &kp N5     &kp N4           &kp N9       xxxx       xxxx  xxxx  xxxx      xxxx
+		&kp N3     &kp N2     &kp N1     &kp N0           &kp N8       xxxx       xxxx  xxxx  xxxx      xxxx
+		&kp LC(Z)  &kp LC(X)  &kp LC(C)  &mt CH_COLN DOT  &kp LC(V)    &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
+          				                            ____  ____         ____  ____
 		>;
 		};
         // Navigation (Right Hand)
