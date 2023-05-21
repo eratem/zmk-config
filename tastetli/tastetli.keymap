@@ -247,10 +247,10 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q          &kp W       &kp F       &kp P      &kp B              &kp J  &kp L      &kp U       &kp CH_Y      &sl CHEESE
-		&kp A          &kp R       &lp SYMR S  &lp NAV T  &kp G              &kp M  &rp NUM N  &rp SYML E  &kp I         &kp O
-		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D      &mt LSHFT V        &kp K  &kp H       &kp COMMA   &mt LGUI CH_Quot  &mt RALT DOT
-                                          &mt LCTRL SPACE  &kp BSPC           &lt FUNC ENTER  &sk LSHFT
+		&kp Q          &kp W       &kp F       &kp P      &kp B              &kp J  &kp L      &kp U       &kp CH_Y           &sl CHEESE
+		&kp A          &kp R       &lp SYMR S  &lp NAV T  &kp G              &kp M  &rp NUM N  &rp SYML E  &kp I              &kp O
+		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D      &mt LSHFT V        &kp K  &kp H       &kp COMMA   &mt LGUI CH_QUOT  &mt RALT DOT
+                                         &mt LCTRL SPACE  &kp BSPC           &lt FUNC ENTER  &sk LSHFT
 		>;
 		};
 
