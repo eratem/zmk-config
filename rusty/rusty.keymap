@@ -92,7 +92,7 @@
 		ZMK_MACRO(m_ae,
 			wait-ms = <30>;
 			tap-ms = <40>;
-			bindings = <&kp CH_UML &kp LS(CH_UE)>;
+			bindings = <&kp CH_UML &kp LS(A)>;
 		)
         bt_0: bt_profile_macro_0 {
             label = "BT_0";
@@ -253,8 +253,8 @@
        		symleft_layer {
 		bindings = <
 		&kp DEL      &kp CH_PERC  &kp CH_HASH  &kp CH_DLR   &kp CH_LESS    xxxx       xxxx  xxxx  xxxx       xxxx
-		&kp TAB      &kp CH_AST   &kp CH_PIPE  &kp CH_SLSH  &kp CH_TILD    xxxx       xxxx  xxxx  xxxx       xxxx
-		&kp LS(TAB)  &kp CH_EURO  &kp CH_GRV   &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
+		&kp TAB      &kp CH_AST   &kp CH_PIPE  &kp CH_SLSH  &m_tild        xxxx       xxxx  xxxx  xxxx       xxxx
+		&kp LS(TAB)  &kp CH_EURO  &m_grv       &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LGUI  &kp LALT
 					                                  ____  ____           ____  ____
 		>;
 		};
@@ -264,7 +264,7 @@
 		bindings = <
 		&kp DEL      xxxx      xxxx  xxxx  xxxx         &kp CH_MORE  &kp CH_AT    &kp CH_PLUS  &kp CH_AMPR  &kp CH_UNDS
 		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_DQOT  &kp CH_QST   &kp CH_EXLM  &kp CH_MINS
-		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &kp CH_ACUT  &kp CH_CARR  &kp CH_PARA
+		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &m_acut      &m_carr      &kp CH_PARA
 		                             ____  ____                ____  ____
 		>;
 		};
@@ -272,9 +272,9 @@
         // Swiss Special Symbol Layer
 		    cheese_layer {
 		bindings = <
-		____        ____  ____        ____  ____             ____  ____  &mt_ue 0 0   ____         &kp CH_UML
-		&mt_ae 0 0  ____  ____        ____  &kp CH_TILD      ____  ____  ____         ____         &mt_oe 0 0
-		____        ____  &kp CH_GRV  ____  ____             ____  ____  &kp CH_ACUT  &kp CH_CARR  ____
+		____        ____  ____        ____  ____             ____  ____  &mt_ue 0 0     ____         &kp CH_UML
+		&mt_ae 0 0  ____  ____        ____  &kp CH_TILD      ____  ____  &kp LS(CH_OE)  ____         &mt_oe 0 0
+		____        ____  &kp CH_GRV  ____  ____             ____  ____  &kp CH_ACUT    &kp CH_CARR  ____
 		                              ____  ____             ____  ____
 		>;
 		};
