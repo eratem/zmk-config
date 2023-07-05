@@ -253,8 +253,8 @@
 		bindings = <
 		&kp Q          &kp W       &kp F       &kp P      &kp B              &kp J  &kp L      &kp U       &kp CH_Y           &sl CHEESE
 		&kp A          &kp R       &lp SYMR S  &lp NAV T  &kp G              &kp M  &rp NUM N  &rp SYML E  &kp I              &kp O
-		&mt LALT CH_Z  &mt LGUI X  &kp C       &kp D      &mt LSHFT V        &kp K  &kp H       &kp COMMA   &mt LGUI CH_QUOT  &mt RALT DOT
-                                         &mt LCTRL SPACE  &kp BSPC           &lt FUNC ENTER  &sk LSHFT
+		&mt LALT CH_Z  &mt LCTRL X &kp C       &kp D      &mt LSHFT V        &kp K  &kp H       &kp COMMA   &mt LCTRL CH_QUOT &mt RALT DOT
+                                         &mt LGUI SPACE   &kp BSPC           &lt FUNC ENTER  &sk LSHFT
 		>;
 		};
 
@@ -263,7 +263,7 @@
 		bindings = <
 		&kp DEL      &kp CH_DLR   &kp CH_HASH  &kp CH_PERC  &kp CH_LESS    xxxx       xxxx  xxxx  xxxx       xxxx
 		&kp TAB      &kp CH_AST   &kp CH_PIPE  &kp CH_SLSH  &m_tild        xxxx       xxxx  xxxx  xxxx       xxxx
-		&kp LS(TAB)  &kp CH_EURO  &m_grv       &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LGUI   &kp LALT
+		&kp LS(TAB)  &kp CH_EURO  &m_grv       &kp CH_BSLS  xxxx           &kp LSHFT  xxxx  xxxx  &kp LCTRL  &kp LALT
 					                                  ____  ____           ____  ____
 		>;
 		};
@@ -273,7 +273,7 @@
 		bindings = <
 		&kp DEL      xxxx      xxxx  xxxx  xxxx         &kp CH_MORE  &kp CH_UNDS  &kp CH_EXLM  &kp CH_AMPR  &kp CH_AT
 		&kp TAB      xxxx      xxxx  xxxx  xxxx         &kp CH_RING  &kp CH_MINS  &kp CH_QST   &kp CH_DQOT  &kp CH_PLUS
-		&kp LS(TAB)  &kp LGUI  xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &m_acut      &m_carr      &kp CH_PARA
+		&kp LS(TAB)  &kp LCTRL xxxx  xxxx  &kp LSHFT           xxxx  &kp CH_EQL   &m_acut      &m_carr      &kp CH_PARA
 		                             ____  ____                ____  ____
 		>;
 		};
