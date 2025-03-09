@@ -273,10 +273,10 @@
         // Navigation (Right Hand)
        		nav_layer {
 		bindings = <
-		xxxx      xxxx      xxxx  xxxx  xxxx         &mpk MB5  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END
-		xxxx      xxxx      xxxx  xxxx  xxxx         &mpk MB4  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT
-		&kp LALT  &kp LGUI  xxxx  xxxx  &kp LSHFT    &mpk MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-          	                            ____  ____   &mpk MB1  &mpg MB2
+		xxxx      xxxx      xxxx  xxxx  xxxx         &mkp MB5  &kp HOME        &kp PG_DN       &kp PG_UP     &kp END
+		xxxx      xxxx      xxxx  xxxx  xxxx         &mkp MB4  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT
+		&kp LALT  &kp LGUI  xxxx  xxxx  &kp LSHFT    &mkp MB3  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+          	                            ____  ____   &mkp MB1  &mpg MB2
 		>;
 		};
         // Function Keys
