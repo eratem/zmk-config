@@ -159,12 +159,12 @@
 		};
 		combo_qwerty {
 			timeout-ms = <100>;
-			key-positions = <0, 9>;
+			key-positions = <0 9>;
 			bindings = <&to QWERTY>;
 		};
 		combo_home {
 			timeout-ms = <100>;
-			key-positions = <20, 29>;
+			key-positions = <20 29>;
 			bindings = <&to BASE>;
 		};
 	};
