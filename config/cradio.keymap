@@ -195,8 +195,8 @@
 		};
 		combo_ctl_alt_del {
 			timeout-ms = <100>;
-			key-position = <24 25>;
-			bindings = <&kp LC(LA(DEL));
+			key-positions = <24 25>;
+			bindings = <&kp LC(LA(DEL))>;
 		};
 	};
 	behaviors {	
